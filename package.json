@@ -1,0 +1,8 @@
+{
+    "name": "turing-machines",
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "start": "tsc && node dist/index.js"
+    }
+}
