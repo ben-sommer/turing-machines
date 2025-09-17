@@ -1,4 +1,5 @@
-import leftAlignedCounter from "./programs/leftAlignedCounter.js";
+// import leftAlignedCounter from "./programs/leftAlignedCounter.js";
+import downCounter from "./programs/downCounter.js";
 
 export type Program = {
   [currentState: string]: {
@@ -10,9 +11,10 @@ export type Program = {
   };
 };
 
-const program: Program = leftAlignedCounter;
+const program: Program = downCounter;
 
-let tape = Array(8).fill(null);
+let tape: (0 | 1 | null)[] = [0, 0, 0, 0, 0, 1, 0, 1];
+// let tape = Array(8).fill(null);
 let currentLocation = 0;
 let currentState: keyof typeof program = "A";
 
